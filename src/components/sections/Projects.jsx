@@ -32,9 +32,9 @@ const Projects = () => {
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
-          Whether you have a mobile app idea that needs to come to life or a
-          website that requires a facelift, I&apos;m here to turn your digital
-          dreams into reality.
+          Whether you have a website design idea waiting to be brought to life
+          or an existing web design that needs a makeover, I am here to turn
+          your digital dreams into reality.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
