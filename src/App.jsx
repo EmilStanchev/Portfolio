@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/navigation/NavBar";
 import Contact from "./components/sections/Contact";
 import Hero from "./components/sections/Hero";
@@ -12,7 +12,6 @@ function App() {
 
   useEffect(() => {
     if (document.readyState === "complete") {
-      console.log("hello");
       setLoading(false);
     }
   }, []);
