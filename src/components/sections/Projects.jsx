@@ -2,8 +2,8 @@
 
 import ProjectCard from "../reusable/ProjectCard";
 import { Typography } from "@material-tailwind/react";
-import video from "../../assets/natureNest.mp4";
-import novelNirvana from "../../assets/novelNirvana.mp4";
+import video from "../../assets/natureNest.webm";
+import novelNirvana from "../../assets/novelNirvana.webm";
 
 const PROJECTS = [
   {

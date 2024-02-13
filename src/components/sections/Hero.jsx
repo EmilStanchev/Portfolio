@@ -2,7 +2,7 @@ import { Input, Button, Typography } from "@material-tailwind/react";
 import heroImage from "../../assets/images/heroImage.png";
 const Hero = () => {
   return (
-    <header className="bg-white p-8">
+    <header id="home" className="bg-white p-8">
       <div className="container mx-auto grid h-full min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <Typography

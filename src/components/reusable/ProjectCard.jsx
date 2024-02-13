@@ -4,10 +4,10 @@ import HoverVideoPlayer from "react-hover-video-player";
 
 const ProjectCard = ({ title, desc, video, path }) => {
   return (
-    <div className="project-card ">
+    <div className="project-card">
       <HoverVideoPlayer className="mb-5" videoSrc={video} />
       <div className="">
-        <div className="p-6">
+        <div className=" h-32 p-6">
           <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
             {title}
           </h5>

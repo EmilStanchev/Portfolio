@@ -9,41 +9,30 @@ import {
 } from "@heroicons/react/24/solid";
 import ContactIcon from "../../assets/icons/ContactIcon";
 import CV from "../../assets/Resume.pdf";
+import NavItem from "./NavItem";
 
 const NAV_MENU = [
   {
     name: "Home",
     icon: HomeIcon,
+    href: "home",
   },
   {
     name: "Skills",
     icon: UserCircleIcon,
-    href: "#skills",
+    href: "skills",
   },
   {
     name: "Projects",
     icon: CommandLineIcon,
-    href: "#projects",
+    href: "projects",
   },
   {
     name: "Contact",
     icon: ContactIcon,
-    href: "#contact",
+    href: "contact",
   },
 ];
-
-function NavItem({ children, href, onClick }) {
-  return (
-    <li onClick={() => onClick()}>
-      <a
-        href={href || "#"}
-        className="flex items-center gap-2 font-medium text-gray-900"
-      >
-        {children}
-      </a>
-    </li>
-  );
-}
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -56,7 +45,12 @@ const Navbar = () => {
         <h1 className="text-lg text-black font-bold">Emil Stanchev</h1>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
-            <NavItem key={name} href={href}>
+            <NavItem
+              key={name}
+              path={href}
+              className="flex items-center gap-2 font-medium text-gray-900 hover:cursor-pointer"
+              icon={<Icon className="h-5 w-5" />}
+            >
               <Icon className="h-5 w-5" />
               {name}
             </NavItem>
