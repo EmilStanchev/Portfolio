@@ -3,7 +3,6 @@
 import { Link } from "react-scroll";
 
 const NavItem = ({ children, path, onClick, className }) => {
-  console.log(path);
   return (
     <li>
       <Link

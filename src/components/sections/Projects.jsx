@@ -1,8 +1,9 @@
-"use client";
-
 import ProjectCard from "../reusable/ProjectCard";
 import { Typography } from "@material-tailwind/react";
+
+//const video = lazy(() => import("../../assets/natureNest.webm"));
 import video from "../../assets/natureNest.webm";
+
 import novelNirvana from "../../assets/novelNirvana.webm";
 
 const PROJECTS = [

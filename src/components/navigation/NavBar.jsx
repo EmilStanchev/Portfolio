@@ -8,6 +8,8 @@ import {
   Bars3Icon,
 } from "@heroicons/react/24/solid";
 import ContactIcon from "../../assets/icons/ContactIcon";
+import InformationIcon from "../../assets/icons/InformationIcon";
+
 import CV from "../../assets/Resume.pdf";
 import NavItem from "./NavItem";
 
@@ -28,8 +30,13 @@ const NAV_MENU = [
     href: "projects",
   },
   {
-    name: "Contact",
+    name: "About",
     icon: ContactIcon,
+    href: "about",
+  },
+  {
+    name: "Contact",
+    icon: InformationIcon,
     href: "contact",
   },
 ];
@@ -41,8 +48,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <h1 className="text-lg text-black font-bold">Emil Stanchev</h1>
+      <div className="container mx-auto flex items-center gap-10 justify-around py-4 px-6">
+        <h1 className="text-lg hidden md:inline-block text-black font-bold">
+          Emil Stanchev
+        </h1>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem
@@ -75,8 +84,8 @@ const Navbar = () => {
       {open && (
         <div className="container mx-auto border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
-            {NAV_MENU.map(({ name, icon: Icon }) => (
-              <NavItem onClick={() => handleOpen()} key={name}>
+            {NAV_MENU.map(({ name, icon: Icon, href }) => (
+              <NavItem path={href} onClick={() => handleOpen()} key={name}>
                 <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
