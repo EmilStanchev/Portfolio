@@ -10,7 +10,7 @@ const About = () => {
       </h3>
       <div className="container mx-auto grid w-full justify-center content-center grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
-          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-black ">
+          <Typography className="mb-4 mt-3 w-9/12 font-normal text-md !text-black ">
             Hello! I am Emil Stanchev, a passionate 20-year-old Frontend
             Developer hailing from Bulgaria. With a keen focus on crafting
             seamless user experiences, I specialize in leveraging technologies

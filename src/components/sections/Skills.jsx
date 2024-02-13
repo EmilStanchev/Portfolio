@@ -1,33 +1,29 @@
 import { Typography } from "@material-tailwind/react";
 import {
-  RectangleGroupIcon,
-  FingerPrintIcon,
-  SwatchIcon,
-  HashtagIcon,
-  EyeIcon,
-  DocumentTextIcon,
+  DevicePhoneMobileIcon,
+  CircleStackIcon,
 } from "@heroicons/react/24/solid";
 import SkillCard from "../reusable/SkillCard";
 import DartArrow from "../../assets/icons/DartArrow";
 
 const SKILLS = [
   {
-    icon: RectangleGroupIcon,
-    title: "Frontend Web Development:",
+    icon: CircleStackIcon,
+    title: "Frontend Web Development",
     children:
       "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
   },
   {
-    icon: FingerPrintIcon,
-    title: "Mobile App Development",
+    icon: DevicePhoneMobileIcon,
+    title: "Convert your figma design to a website",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      " I  specialize in converting Figma designs into fully functional websites. Let me transform your Figma creations into dynamic and responsive web experiences.",
   },
   {
     icon: DartArrow,
     title: "Technology Stack",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
+      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, Tailwind CSS, Material-UI and frameworks like React and React Native.",
   },
 ];
 
@@ -35,10 +31,7 @@ const Skills = () => {
   return (
     <section id="skills" className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          my skills
-        </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography color="blue-gray" className="text-4xl font-bold mb-4">
           What I do
         </Typography>
         <Typography
