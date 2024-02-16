@@ -1,5 +1,6 @@
-import { Input, Button, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import heroImage from "../../assets/images/heroImage.png";
+import HeroForm from "../form/HeroForm";
 const Hero = () => {
   return (
     <header id="home" className="bg-white p-8 ">
@@ -21,16 +22,7 @@ const Hero = () => {
             of web development, where creativity meets functionality.
           </Typography>
           <div className="grid">
-            <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
-              <Input
-                className="border-2 border-gray-300 rounded-lg px-4 py-3 w-full focus:outline-none focus:border-black"
-                placeholder="Your email"
-                size="lg"
-              />
-              <Button className=" w-full px-4 md:w-[12rem] capitalize bg-black text-white">
-                require offer
-              </Button>
-            </div>
+            <HeroForm />
           </div>
         </div>
         <div className="flex justify-center items-center ">

@@ -37,7 +37,7 @@ const Projects = () => {
           your digital dreams into reality.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20  lg:grid-cols-2">
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}
